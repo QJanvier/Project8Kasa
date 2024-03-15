@@ -6,15 +6,13 @@ Banner.propTypes = {
     title: PropTypes.string.isRequired,
 }
 
-export default function Banner({ image, alt, title }) {
-
-
+const Banner = ({ image, alt, title }) => {
 
     return (
-        <div className="container-banner">
+        <div className="container_banner">
             <div className="banner">
-                <img src={ image } alt={ alt } className="banner-image" />
-                <h1 className="banner-text">
+                <img src={ image } alt={ alt } className="banner_image" />
+                <h1 className="banner_text">
                     <span>{ title }</span>
                 </h1>
             </div>
@@ -22,3 +20,4 @@ export default function Banner({ image, alt, title }) {
     );
 }
 
+export default Banner;
