@@ -1,0 +1,22 @@
+.rating {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 98px;
+    height: 18px;
+
+    @include tablet {
+        width: 196px;
+        height: 36px;
+    }
+
+    @include desktop {
+        width: 196px;
+        height: 36px;
+    }
+
+    @include largeDesktop {
+        width: 196px;
+        height: 36px;
+    }
+}

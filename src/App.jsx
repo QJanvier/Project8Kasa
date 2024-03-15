@@ -1,24 +1,14 @@
-import '../src/assets/style/index.scss';
-import { Routes, Route } from "react-router-dom";
-import Home from "./routes/Home";
-import Error404 from './components/Error404'
-import Header from './components/Header';
-import Footer from './components/Footer';
-import About from './routes/About';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import PublicRouter from "@/Pages/Public/Public.router";
 
-
-function App() {
+const App = () => {
   return (
-    <>
-      <Header />
-        <Routes>
-          <Route path="/" element= { <Home /> } />
-          <Route path="/about" element= { <About /> } />
-          <Route path="/*" element= { <Error404 /> } />
-        </Routes>
-      <Footer />
-    </>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/*" element={<PublicRouter />} />
+            </Routes>
+        </BrowserRouter>
   );
 }
 

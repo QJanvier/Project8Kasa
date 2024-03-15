@@ -1,0 +1,50 @@
+@keyframes underLink { // navbar link
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn { //for banner
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dropDown {//open dropdown
+    0% {
+        opacity: 0;
+        transform: translateY(-80%);
+      }
+      20% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+}
+
+@keyframes pullUp {//close dropdown
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      20% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-80%);
+      }
+}

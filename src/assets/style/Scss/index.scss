@@ -1,0 +1,25 @@
+// Import du template.
+@import './Template/Template';
+
+// Import des utilitaires.
+@import './Utils/Variables';
+@import './Utils/Fonts';
+@import './Utils/Mixins';
+@import './Utils/Placeholders';
+@import './Utils/Keyframes.scss';
+
+// Import des Components
+@import './Components/Banner.scss';
+@import './Components/Card';
+@import './Components/Dropdown';
+@import './Components/Rating';
+@import './Components/Slideshow';
+
+//Import des Layouts
+@import './Layout/Header.scss';
+@import './Layout/Footer.scss';
+
+//Import des pages
+@import './Pages/About.scss';
+@import './Pages/Error404';
+@import './Pages/Home';
