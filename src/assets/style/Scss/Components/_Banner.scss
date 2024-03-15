@@ -1,19 +1,85 @@
+@import '../../Scss/Utils/Mixins';
+@import '../../Scss/Utils/Keyframes';
 
-.home-banner {
+
+.container_banner .banner_about {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
 }
 
 .banner {
     width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    position: relative;
+
+    @include desktop {
+        margin-bottom: 43px;
+    }
+
+    @include largeDesktop {
+        margin-bottom: 43px;
+    }
+
+    &_text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 24px;
+        font-style: normal;
+        line-height: 24px;
+        padding-left: 30px;
+        gap: 5px;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fadeIn 2000ms ease 1s forwards;
+        opacity: 0;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: center;
+            text-align: left;
+            font-size: 32px;
+            font-style: normal;
+            line-height: 24px;
+        }
+
+        @include desktop {
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            font-size: 48px;
+        }
+
+        @include largeDesktop {
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            font-size: 48px;
+        }
+    }
     
 }
 
-.banner-img {
+.banner img {
     width: 100%;
+    max-width: 1240px;
     height: 110px;
     border-radius: 25px;
     object-fit: cover;
+    filter: brightness(0.6);
+
+    @include desktop {
+        height: 223px;
+    }
+
+    @include largeDesktop {
+        height: 223px;
+    }
+
 }

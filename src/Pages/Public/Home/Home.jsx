@@ -4,7 +4,7 @@ import Card from "@/Components/Card/Card";
 
 import { NavLink } from 'react-router-dom';
 
-import logementservice from '@/_Services/Service.logement.jsx';
+import logementservice from '@/_Services/Service.logement.jsx'; //use this to add property
 
 const Home = () => {
 

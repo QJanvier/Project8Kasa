@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Arrow from "../../Assets/image/arrow/arrow_back";
+import Arrow from "../../Assets/image/arrow/arrow_back.png";
 import PropTypes from "prop-types";
 
 
