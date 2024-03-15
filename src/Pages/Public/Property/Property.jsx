@@ -1,8 +1,8 @@
 import { useParams, Navigate } from "react-router-dom";
 import propertyData from '@/Assets/data/logements.json';
-import SlideShow from '@/Components/Slideshow';
-import Rating from '@/Components/Rating';
-import Dropdown from "@/Components/Dropdown";
+import SlideShow from '../../../Components/Slideshow/Slideshow';
+import Rating from '../../../Components/Rating/Rating';
+import Dropdown from "../../../Components/Dropdown/Dropdown";
 
 
 const Property = () => {

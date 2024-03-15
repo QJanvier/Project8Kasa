@@ -1,5 +1,5 @@
-import activeRating from "../../Assets/image/stars/starActive";
-import inactiveRating from "../../Assets/image/stars/starInactive";
+import activeRating from "../../Assets/image/stars/star-active.png";
+import inactiveRating from "../../Assets/image/stars/star-inactive.png";
 import PropTypes from 'prop-types';
 
 const Rating = ({starRating}) => {

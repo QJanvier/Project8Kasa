@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import ForwardArrow from  '../../Assets/image/arrow/arrow_forward';
-import BackwardArrow from '../../Assets/image/arrow/arrow_back';
+import ForwardArrow from  '../../Assets/image/arrow/arrow_forward.png';
+import BackwardArrow from '../../Assets/image/arrow/arrow_back.png';
 import PropTypes from 'prop-types';
 
 const Slideshow = ({ pictures, title }) => {
