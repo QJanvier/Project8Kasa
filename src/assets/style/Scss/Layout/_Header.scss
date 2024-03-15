@@ -1,0 +1,116 @@
+@import '../Utils/Mixins';
+@import '../Utils/Keyframes';
+@import '../Utils/Variables';
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1240px;
+    height: 46px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 27px;
+
+    @include desktop {
+        margin-top: 45px;
+        margin-bottom: 50px;
+        height: 68px;
+    }
+
+    @include largeDesktop {
+        margin-top: 45px;
+        margin-bottom: 50px;
+        height: 68px;
+    }
+
+    img {
+        width: 145px;
+        height: 47px;
+
+        @include desktop {
+            width: 210px;
+            height: 68px;
+        }
+
+        @include largeDesktop {
+            width: 210px;
+            height: 68px;
+        }
+    }
+}
+
+.active:after {
+    background: $primary-color;
+    border-radius: 10px;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    width: 0;
+    transform: translateX(-50%);
+    animation: underLink 500ms ease forwards;
+  
+    @include phone {
+      height: 1px;
+    }
+  
+    @include tablet {
+      height: 2px;
+    }
+}
+
+
+.header_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 20px;
+}
+
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    @include tablet {
+        gap: 26px;
+    }
+
+    @include desktop {
+        gap: 26px;
+    }
+
+    @include largeDesktop {
+        gap: 26px;
+    }
+
+    a {
+        text-align: right;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+        position: relative;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size: 24px;
+            text-transform: none;
+        }
+
+        @include desktop {
+            font-size: 24px;
+            text-transform: none;
+        }
+
+        @include largeDesktop {
+            font-size: 24px;
+            text-transform: none;
+        }
+    }
+}

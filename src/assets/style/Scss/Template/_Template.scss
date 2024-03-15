@@ -1,0 +1,40 @@
+@import "../Utils/Fonts";
+@import "../Utils/Mixins";
+@import "../Utils/Variables";
+
+
+body {
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+    h1 {
+        z-index: 1;
+        color: $third-color;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 68px;
+        margin: 0;
+        padding: 0;
+
+        @include phone {
+            font-size: 24px;
+            padding: 0;
+        }
+    }
+    
+    ul {
+        list-style-type: none;
+        padding-inline-start: 0px;
+    }
+    
+    a {
+        font-weight: 500;
+        color: $primary-color;
+        text-decoration: inherit;
+    }
+
+}
