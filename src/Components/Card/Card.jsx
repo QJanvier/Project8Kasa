@@ -35,7 +35,6 @@ Card.propTypes = {
         }).isRequired,
         rating: PropTypes.string.isRequired,
         location: PropTypes.string.isRequired,
-        // equipements: PropTypes.arrayOf(PropTypes.string).isRequired,
         tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     }).isRequired,
 };
