@@ -23,7 +23,7 @@ header {
         margin-bottom: 50px;
         height: 68px;
     }
-
+    
     img {
         width: 145px;
         height: 47px;
@@ -44,29 +44,6 @@ header {
 .container_banner {
     width: 100%;
 }
-
-
-.active:after {
-    background: $primary-color;
-    border-radius: 10px;
-    bottom: 0;
-    content: "";
-    height: 3px;
-    left: 50%;
-    position: absolute;
-    width: 0;
-    transform: translateX(-50%);
-    animation: underLink 500ms ease forwards;
-  
-    @include phone {
-      height: 1px;
-    }
-  
-    @include tablet {
-      height: 2px;
-    }
-}
-
 
 .header_block {
     display: flex;
@@ -102,6 +79,7 @@ header {
         font-weight: 500;
         line-height: 34px;
         position: relative;
+        color: black;
         text-transform: uppercase;
 
         @include tablet {
@@ -117,6 +95,10 @@ header {
         @include largeDesktop {
             font-size: 24px;
             text-transform: none;
+        }
+
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
