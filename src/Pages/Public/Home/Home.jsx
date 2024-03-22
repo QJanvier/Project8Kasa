@@ -13,12 +13,12 @@ const Home = () => {
         <section className="home">
             <Banner image={ HomeBanner } alt="Photo d'une falaise" title="Chez vous, partout et ailleurs"/>
 
-            <ul>
+            <ul className="property_list">
                 {
                     logementservice.GetAllLogement().map((logement) => 
                     <NavLink key={logement.id} to={"/logement/" + logement.id + "/#"}>
-                        <Card />
-                    </NavLink>
+                        <Card property={logement} />
+                    </NavLink> //Le property={logement recupere les infos de ton service}
                     )
                 }
             </ul>

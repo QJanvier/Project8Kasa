@@ -1,0 +1,53 @@
+@import '../Utils/Mixins';
+@import '../Utils/Variables';
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    width: 89%;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 89%;
+    }
+
+    @include desktop {
+        width: 100%;
+    }
+
+    @include largeDesktop {
+        width: 100%;
+    }
+}
+
+
+//Gallery
+
+.property_list {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-auto-rows: 255px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+
+    @include tablet {
+        grid-template-columns: repeat(2, auto);
+        grid-auto-rows: 280px;
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: 340px;
+        margin-top: 56px;
+    }
+
+    @include largeDesktop {
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: 340px;
+    }
+}

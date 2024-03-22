@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
-import  { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 const Card = ( {property} ) => {
     return (
         <li className="card">
-            <Link to={`../Pages/Property/${property.id}`} title={property.title}>
+            <Link to={`../../Pages/Public/Property/${property.id}`} title={property.title}>
                 <article className='card_article'>
                     <img src={property.cover} alt={property.title} className="card_image" />
                         <h2 className="card_title">
@@ -34,7 +35,7 @@ Card.propTypes = {
         }).isRequired,
         rating: PropTypes.string.isRequired,
         location: PropTypes.string.isRequired,
-        equipements: PropTypes.arrayOf(PropTypes.string).isRequired,
+        // equipements: PropTypes.arrayOf(PropTypes.string).isRequired,
         tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     }).isRequired,
 };

@@ -1,0 +1,294 @@
+@import '../Utils/Mixins';
+@import '../Utils/Variables';
+
+
+//Base
+.root {
+    @include tablet {
+        max-width: 1440px;
+    }
+
+    @include desktop {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    @include largeDesktop {
+        max-width: 1900px;
+        margin: 0 auto;
+    }
+}
+
+.site_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1240px;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 27px;
+
+    @include tablet {
+        margin-bottom: 37px;
+    }
+
+    @include desktop {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    @include largeDesktop {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+}
+
+
+//Properties Settings
+
+#details_block {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    width: 100%;
+    gap: 5px;
+}
+
+.property_block {
+    display: flex;
+    flex-direction: column;
+    color: $primary-color;
+    flex-wrap: nowrap;
+    order: 0;
+
+    h1 {
+        color: $primary-color;
+    }
+
+    @include desktop {
+        width: 49%;
+        order: 0;
+    }
+
+    @include largeDesktop {
+        width: 49%;
+        order: 0;
+    }
+}
+
+.property_title {
+    font: 18px normal 500;
+    line-height: 26px;
+    text-align: left;
+
+    @include desktop {
+        font-size: 35px;
+        line-height: 51px;
+    }
+
+    @include largeDesktop {
+        font-size: 36px;
+        line-height: 51px;
+    }
+}
+
+.property_location {
+    font: 14px normal 500;
+    line-height: 26px;
+
+    @include desktop {
+        font-size: 18px;
+    }
+
+    @include largeDesktop {
+        font-size: 18px;
+    }
+}
+
+.property_owner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    color : $primary-color;
+    order: 1;
+    width: 100%;
+
+    @include tablet {
+        justify-content: space-between;
+    }
+
+    @include desktop {
+        flex-direction: column;
+        align-items: end;
+        width: 49%;
+        order : 1;
+    }
+
+    @include largeDesktop {
+        flex-direction: column;
+        align-items: end;
+        width: 49%;
+        order : 1
+    }
+
+    &_name {
+        display: flex;
+        align-items: center;
+        text-align: right;
+        width: 50%;
+        max-width: 93px;
+        height: 52px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17px;
+        margin-right: 10px;
+        letter-spacing: 0em;
+        text-align: right;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    @include desktop {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    @include largeDesktop{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    }
+
+    &_pp {
+        border-radius : 50%;
+        object-fit: cover;
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+
+        @include desktop {
+            width: 64px;
+            height: 64px;
+
+        }
+
+        @include largeDesktop {
+            width: 64px;
+            height : 64px;
+        }
+    }
+
+    &_pp:hover {
+        @include largeDesktop {
+            scale : 1.5;
+        }
+    }
+}
+
+.property_owner_details {
+    display : flex; 
+    align-items: center;
+    justify-content: end;
+
+    @include desktop {
+        flex-direction: row;
+    }
+
+    @include largeDesktop {
+        flex-direction: row;
+    }
+    
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+.property_tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+
+    @include desktop {
+        order : 3;
+    }
+
+    @include largeDesktop {
+        order : 3;
+    }
+
+
+    &_details {
+    color: $third-color;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    }
+
+    .tag {
+        display: flex;
+        align-items: center;
+        background-color: $primary-color;
+        text-align: center;
+        border-radius: 10px;
+        color: #FFF;
+        font: 10px normal 500;
+        line-height: 14px;
+        padding: 5px 10px;
+        height: 18px;
+
+        p {
+            padding : 5px 10px;
+            margin: 0 auto;
+
+            @include tablet {
+                padding: 3px 30px 2px;
+            }
+
+            @include desktop {
+                padding: 3px 30px 2px;
+            }
+
+            @include largeDesktop {
+                padding: 3px 30px 2px;
+            }
+        }
+
+        @include tablet {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 3px 30px 2px;
+            height: 25px;
+        }
+
+        @include desktop {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 3px 30px 2px;
+            height: 25px;
+            
+        }
+
+        @include largeDesktop {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 3px 30px 2px;
+            height: 25px;
+        }
+    }
+
+}

@@ -1,0 +1,90 @@
+@import '../Utils/Variables';
+@import '../Utils/Mixins';
+
+.errorpage {
+    text-align: center;
+    color: $primary-color;
+    margin-top: 113px;
+
+    @include tablet {
+        margin-top: 139px;
+    }
+
+    @include desktop {
+        margin-top: 139px;
+    }
+
+    @include largeDesktop {
+        margin-top: 139px;
+    }
+
+    &_span {
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 137px;
+
+        @include desktop {
+            margin-top: 139px;
+            font-size: 288px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 410px;
+        }
+
+        @include largeDesktop{
+            margin-top: 139px;
+            font-size: 288px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 410px;
+        }
+    }
+
+    &_text {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px;
+    }
+
+    @include tablet {
+        font-size: 36px;
+        line-height: 51px;
+    }
+
+    @include desktop {
+        font-size: 36px;
+        line-height: 51px;
+    }
+
+    @include largeDesktop {
+        font-size: 36px;
+        line-height: 51px;
+    }
+
+    &_tohome {
+        margin: 139px 0px;
+        font-size: 14px;
+        color: black;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 19px;
+        text-decoration-line: underline;
+
+        @include tablet {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        @include desktop {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        @include largeDesktop {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import '../Utils/Mixins';
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.About {
+    margin-top: 38px;
+    border-radius: 10px;
+    gap: 76px;
+    margin: 0 20px;
+    width: 100%;
+    max-width: 1024px;
+
+    @include desktop {
+        margin-top: 30px;
+    }
+}
+
+.dropdown_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 96px;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    @include tablet {
+        gap: 20px;
+        order: 4;
+        margin-top: 20px;
+    }
+
+    @include desktop {
+        flex-direction: row;
+        align-items: baseline;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    @include largeDesktop {
+        flex-direction: row;
+        align-items: baseline;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .dropdown {
+        width: 100%;
+
+        @include desktop {
+            width: 100%;
+        }
+
+        @include largeDesktop {
+            width: 100%;
+        }
+    }
+}

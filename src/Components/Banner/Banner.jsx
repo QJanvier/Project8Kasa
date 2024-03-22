@@ -1,10 +1,6 @@
 import PropTypes from 'prop-types';
 
-Banner.propTypes = {
-    image: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-}
+
 
 const Banner = ({ image, alt, title }) => {
 
@@ -21,3 +17,9 @@ const Banner = ({ image, alt, title }) => {
 }
 
 export default Banner;
+
+Banner.propTypes = {
+    image: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+}
