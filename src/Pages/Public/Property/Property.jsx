@@ -1,6 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
 import propertyData from '../../../Assets/data/logements.json';
-import Card from '../../../Components/Card/Card';
 import SlideShow from '../../../Components/Slideshow/Slideshow';
 import Rating from '../../../Components/Rating/Rating';
 import Dropdown from "../../../Components/Dropdown/Dropdown";
@@ -15,7 +14,6 @@ const Property = () => {
             {!property && <Navigate to="Error404" replace={true} />}
             {property && (
                 <>
-                    <Card property={property} />
                     <SlideShow pictures={property.pictures} title={property.title} />
 
                     <div id="details_block">
@@ -51,11 +49,10 @@ const Property = () => {
                         </div>
 
                         <div className="dropdown_block">
-                            <Dropdown key={`dropdown-${property.id}-description`} title="Description" content={property.description} className="dropdown_description" />
+                            
+                            <Dropdown key={`dropdown-${property.id}-description`} title="Description" content={[property.description]} className="dropdown_description" />
 
-                            <Dropdown key={`dropdown-${property.id}-equipements`} title="Équipements" content={property.equipements.map((equipement) => (
-                                <span key={equipement.id}>{equipement}</span>
-                            ))} className="dropdown_equipements" />
+                            <Dropdown key={`dropdown-${property.id}-equipements`} title="Équipements" content={property.equipments} className="dropdown_equipements" />
                         </div>
                     </div>
                 </>
