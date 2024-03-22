@@ -19,7 +19,11 @@ const Dropdown = ({ title, content }) => {
                 <img src={Arrow} alt="Icône" className={arrowIconClass} />
             </button>
             {isContentVisible && (
-                <div id="contentBlock" className={contentBlockClass}>{content}</div>
+                <div id="contentBlock" className={contentBlockClass}>
+                    <ul>
+                    {content.map((value) => <li key={value}>{value}</li>)}                    
+                    </ul>
+                </div>
             )}
         </div>
     );
@@ -29,5 +33,5 @@ export default Dropdown;
 
 Dropdown.propTypes = {
     title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
+    content: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

@@ -13,7 +13,7 @@ const About = () => {
                 <div className="about_block">
                     <div className="dropdown_block">
                         {aboutData.map((element) => (
-                            <Dropdown key={element.id} title={element.title} content={element.content} />
+                            <Dropdown key={element.id} title={element.title} content={[element.content]} />
                         ))}
                     </div>
                 </div>
