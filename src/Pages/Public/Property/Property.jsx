@@ -1,5 +1,6 @@
 import { useParams, Navigate } from "react-router-dom";
-import propertyData from '@/Assets/data/logements.json';
+import propertyData from '../../../Assets/data/logements.json';
+import Card from '../../../Components/Card/Card';
 import SlideShow from '../../../Components/Slideshow/Slideshow';
 import Rating from '../../../Components/Rating/Rating';
 import Dropdown from "../../../Components/Dropdown/Dropdown";
@@ -14,6 +15,7 @@ const Property = () => {
             {!property && <Navigate to="Error404" replace={true} />}
             {property && (
                 <>
+                    <Card property={property} />
                     <SlideShow pictures={property.pictures} title={property.title} />
 
                     <div id="details_block">

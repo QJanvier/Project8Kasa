@@ -1,7 +1,7 @@
-import AboutData from "@/Assets/data/about.json";
-import Dropdown from "@/Components/Dropdown";
-import Banner from "@/Components/Banner";
-import AboutBanner from "@/Assets/image/bkg/moutain.jpeg";
+import AboutData from "../../../Assets/data/about.json";
+import Dropdown from "../../../Components/Dropdown/Dropdown";
+import Banner from "../../../Components/Banner/Banner";
+import AboutBanner from "../../../Assets/image/bkg/mountain.jpeg";
 
 const About = () => {
     const aboutData = AboutData;
