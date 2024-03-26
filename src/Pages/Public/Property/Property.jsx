@@ -22,23 +22,7 @@ const Property = () => {
                                 <h1 className="property_title">{property.title}</h1>
                             </div>
                             <div className="property_location">{property.location}</div>
-                        </div>
-
-                        <div className="property_owner">
-                            <div className="property_owner_details">
-                                <div className="property_owner_name">
-                                    {property.host.name}
-                                </div>
-
-                                <img src={property.host.picture} alt={property.host.name} className="property_owner_pp" />
-                            </div>
-
-                            <div className="property_tags_rating">
-                                <Rating starRating={property.rating} />
-                            </div>
-                        </div>
-
-                        <div className="property_tags">
+                            <div className="property_tags">
                             <div className="property_tags_details">
                                 {property.tags.map((tag, index) =>(
                                     <div className="tag" key={index}>
@@ -47,9 +31,22 @@ const Property = () => {
                                 ))}
                             </div>
                         </div>
+                        </div>
 
-                        <div className="dropdown_block">
-                            
+                        
+                        <div className="property_owner">
+                            <div className="property_owner_details">
+                                <div className="property_owner_name">
+                                    {property.host.name}
+                                </div>
+                                <img src={property.host.picture} alt={property.host.name} className="property_owner_pp" />
+                            </div>                            
+                            <div className="property_tags_rating">
+                                <Rating starRating={property.rating} />
+                            </div>
+                        </div>     
+
+                        <div className="dropdown_block_property">                            
                             <Dropdown key={`dropdown-${property.id}-description`} title="Description" content={[property.description]} className="dropdown_description" />
 
                             <Dropdown key={`dropdown-${property.id}-equipements`} title="Équipements" content={property.equipments} className="dropdown_equipements" />

@@ -10,9 +10,9 @@ const Card = ( {property} ) => {
                         <h2 className="card_title">
                             {property.title}
                         </h2>
-                        <p className="card_location">
+                        {/* <p className="card_location">
                             {property.location}
-                        </p>
+                        </p> */}
                 </article>
         </li>
     )

@@ -60,15 +60,14 @@
     flex-direction: column;
     color: $primary-color;
     flex-wrap: nowrap;
-    order: 0;
+    margin-top: 10px;
 
     h1 {
         color: $primary-color;
     }
 
     @include desktop {
-        width: 49%;
-        order: 0;
+        width: 69%;
     }
 
     @include largeDesktop {
@@ -78,8 +77,8 @@
 }
 
 .property_title {
+    color: $primary-color;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
     line-height: 26px;
     text-align: left;
@@ -96,10 +95,11 @@
 }
 
 .property_location {
+    color: black;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
     line-height: 26px;
+    margin-bottom: 15px;
 
     @include desktop {
         font-size: 18px;
@@ -116,7 +116,6 @@
     flex-direction: row-reverse;
     align-items: center;
     color : $primary-color;
-    order: 1;
     width: 100%;
 
     @include tablet {
@@ -124,9 +123,10 @@
     }
 
     @include desktop {
+        margin-top: 25px;
         flex-direction: column;
         align-items: end;
-        width: 49%;
+        width: 30%;
         order : 1;
     }
 
@@ -145,7 +145,6 @@
         max-width: 93px;
         height: 52px;
         font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 17px;
         margin-right: 10px;
@@ -222,7 +221,6 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 20px;
     width: 100%;
 
     @include desktop {
@@ -251,8 +249,7 @@
         border-radius: 10px;
         color: #FFF;
         font-size: 10px;
-        font-style: normal;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 14px;
         padding: 5px 10px;
         height: 18px;
@@ -297,4 +294,8 @@
         }
     }
 
+}
+
+.dropdown_block_property {
+    display: flex;
 }
