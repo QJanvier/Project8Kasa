@@ -5,6 +5,7 @@
 .dropdown {
     display: flex;
     flex-direction: column;
+    flex: 1;
     justify-content: center;
     cursor: pointer;
     text-align: right;
@@ -32,27 +33,26 @@
         background-color: var(--Red, $primary-color);
         color: $third-color;
         font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
+        font-weight: 700;
         width: 100%;
         position: relative;
         z-index: 2;
         padding-left: 15px;
-        
+
         @include phone {
             height: 30px;
             font-size: 13px;
         }
-        
+
         img {
             cursor: pointer;
         }
     }
 
-        h3 {
-            padding-left: 15px;
-        }
-    
+    h3 {
+        padding-left: 15px;
+    }
+
     &_content {
         display: flex;
         flex-direction: column;
@@ -75,25 +75,25 @@
         @include desktop {
             font-size: 24px;
         }
-      
-          @include largeDesktop {
+
+        @include largeDesktop {
             font-size: 24px;
         }
-    }    
+    }
 }
 
 .expend_dropdown {
     .dropdown {
         &__title {
             &::after {
-              transform: rotate(360deg) !important;
+                transform: rotate(360deg) !important;
             }
-          }
-    
-          &__content {
+        }
+
+        &__content {
             padding-top: 4rem;
             max-height: 500px;
-          }
+        }
     }
 }
 
@@ -106,17 +106,17 @@
     margin: 10px;
     transform: rotate(90deg);
     transition: transform 0.5s ease;
-  
+
     @include desktop {
-      width: 32px;
-      height: 32px;
-      margin: 10px 20px 10px 0px;
+        width: 32px;
+        height: 32px;
+        margin: 10px 20px 10px 0px;
     }
-  
+
     @include largeDesktop {
-      width: 32px;
-      height: 32px;
-      margin: 10px 20px 10px 0px;
+        width: 32px;
+        height: 32px;
+        margin: 10px 20px 10px 0px;
     }
 }
 
@@ -134,13 +134,13 @@
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-  
+
     @include desktop {
         gap: 30px;
     }
-  
+
     @include largeDesktop {
-        gap : 30px;
+        gap: 30px;
     }
 }
 

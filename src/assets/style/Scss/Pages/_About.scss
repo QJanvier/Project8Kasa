@@ -28,13 +28,12 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    gap: 96px;
+    gap: 20px;
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
 
     @include tablet {
-        gap: 20px;
         order: 4;
         margin-top: 20px;
     }
@@ -42,13 +41,11 @@ main {
     @include desktop {
         align-items: baseline;
         margin-top: 50px;
-        gap: 20px;
     }
 
     @include largeDesktop {
         align-items: baseline;
         margin-top: 50px;
-        gap: 20px;
     }
 
     #contentBlock {

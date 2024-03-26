@@ -5,7 +5,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 28px;
     margin-top: 27px;
     background-color: $secondary-color;
     width: 100%;
@@ -19,16 +18,13 @@ footer {
 
 
     @include tablet {
-        width: 100%;
-        margin-top: 50px;;
+        margin-top: 50px;
     }
 
     @include desktop {
-        width: 100%;
     }
 
     @include largeDesktop {
-        width: 100%;
     }
     
 }
