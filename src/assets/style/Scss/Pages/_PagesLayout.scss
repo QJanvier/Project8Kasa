@@ -45,7 +45,7 @@
 }
 
 
-//Properties Settings
+//PROPERTIES SETTTINGS
 
 #details_block {
     display: flex;
@@ -54,6 +54,9 @@
     width: 100%;
     gap: 5px;
 }
+
+
+//Location
 
 .property_block {
     display: flex;
@@ -110,12 +113,15 @@
     }
 }
 
+
+//Owner details
+
 .property_owner {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
-    color : $primary-color;
+    color: $primary-color;
     width: 100%;
 
     @include tablet {
@@ -125,16 +131,20 @@
     @include desktop {
         margin-top: 25px;
         flex-direction: column;
+        justify-content: center;
+        gap: 15px;
         align-items: end;
         width: 30%;
-        order : 1;
+        order: 1;
     }
 
     @include largeDesktop {
         flex-direction: column;
+        justify-content: center;
+        gap: 15px;
         align-items: end;
         width: 49%;
-        order : 1
+        order: 1
     }
 
     &_name {
@@ -151,25 +161,25 @@
         letter-spacing: 0em;
         text-align: right;
 
-    @include tablet {
-        font-size: 16px;
-        line-height: 18px;
-    }
+        @include tablet {
+            font-size: 16px;
+            line-height: 18px;
+        }
 
-    @include desktop {
-        font-size: 18px;
-        line-height: 26px;
-    }
+        @include desktop {
+            font-size: 18px;
+            line-height: 26px;
+        }
 
-    @include largeDesktop{
-        font-size: 18px;
-        line-height: 26px;
-    }
+        @include largeDesktop {
+            font-size: 18px;
+            line-height: 26px;
+        }
 
     }
 
     &_pp {
-        border-radius : 50%;
+        border-radius: 50%;
         object-fit: cover;
         width: 32px;
         height: 32px;
@@ -183,38 +193,35 @@
 
         @include largeDesktop {
             width: 64px;
-            height : 64px;
+            height: 64px;
         }
     }
 
     &_pp:hover {
         @include largeDesktop {
-            scale : 1.5;
+            scale: 1.5;
         }
     }
 }
 
 .property_owner_details {
-    display : flex; 
+    display: flex;
     align-items: center;
     justify-content: end;
 
     @include desktop {
         flex-direction: row;
+        align-items: center;
     }
 
     @include largeDesktop {
         flex-direction: row;
     }
-    
-
-    @include desktop {
-        display: flex;
-        align-items: center;
-    }
-
 
 }
+
+
+//Tags
 
 .property_tags {
     display: flex;
@@ -223,21 +230,26 @@
     flex-wrap: wrap;
     width: 100%;
 
+
+    @include tablet {
+        width: 100%;
+    }
+
     @include desktop {
-        order : 3;
+        order: 2;
     }
 
     @include largeDesktop {
-        order : 3;
+        order: 2;
     }
 
 
     &_details {
-    color: $third-color;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+        color: $third-color;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
 
     }
 
@@ -245,6 +257,7 @@
         display: flex;
         align-items: center;
         background-color: $primary-color;
+        justify-content: center;
         text-align: center;
         border-radius: 10px;
         color: #FFF;
@@ -252,50 +265,96 @@
         font-weight: 700;
         line-height: 14px;
         padding: 5px 10px;
-        height: 18px;
+        max-width: 84px;
+        min-width: 25px;
+        max-height: 25px;
+        flex: 1;
 
-        p {
-            padding : 5px 10px;
-            margin: 0 auto;
 
-            @include tablet {
-                padding: 3px 30px 2px;
-            }
-
-            @include desktop {
-                padding: 3px 30px 2px;
-            }
-
-            @include largeDesktop {
-                padding: 3px 30px 2px;
-            }
-        }
 
         @include tablet {
+            max-height: 35px;
             font-size: 14px;
+            max-width: 150px;
             line-height: 20px;
             padding: 3px 30px 2px;
-            height: 25px;
         }
 
         @include desktop {
+            max-height: 35px;
             font-size: 14px;
+            max-width: 150px;
             line-height: 20px;
             padding: 3px 30px 2px;
-            height: 25px;
-            
+
         }
 
         @include largeDesktop {
+            max-height: 35px;
             font-size: 14px;
+            max-width: 150px;
             line-height: 20px;
             padding: 3px 30px 2px;
-            height: 25px;
         }
     }
 
 }
 
+
+
+//Dropdown
+
 .dropdown_block_property {
     display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    gap: 25px;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    @include desktop {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        order: 2;
+    }
+
+    @include largeDesktop {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        order: 2;
+    }
+
+    .dropdown_header {
+
+        @include tablet {
+            font-size: 18px;
+        }
+
+        @include desktop {
+            font-size: 18px;
+        }
+
+        @include largeDesktop {
+            font-size: 18px;
+        }
+    }
+
+    #contentBlock {
+        color: black;
+        flex: 1;
+
+        @include desktop {
+            font-size: 18px;
+        }
+
+        @include largeDesktop {
+            font-size: 18px;
+        }
+    }
 }

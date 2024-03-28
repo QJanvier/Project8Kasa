@@ -22,7 +22,7 @@ const Slideshow = ({ pictures, title }) => {
                 if (currentIndex === 0) {//Stop scrolling if first image
                     clearInterval(interval);
                 }
-            }, 50);
+            }, );
         } else {//next image
             setCurrentPictureIndex(currentPictureIndex + 1);
         }
