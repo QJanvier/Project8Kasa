@@ -36,16 +36,19 @@ main {
     @include tablet {
         order: 4;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     @include desktop {
         align-items: baseline;
         margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     @include largeDesktop {
         align-items: baseline;
         margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     #contentBlock {
