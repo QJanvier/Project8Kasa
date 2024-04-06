@@ -347,13 +347,18 @@
 
     #contentBlock {
         color: black;
-        flex: 1;
+
+        @include tablet {
+            flex: 1 1 253px;
+        }
 
         @include desktop {
+            flex: 1 1 211px;
             font-size: 18px;
         }
 
         @include largeDesktop {
+            flex: 1 1 211px;
             font-size: 18px;
         }
     }

@@ -32,6 +32,7 @@ main {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+    margin-bottom: 20px;
 
     @include tablet {
         order: 4;
@@ -53,7 +54,7 @@ main {
 
     #contentBlock {
         color: black;
-        font-size: 18px;
+        font-size: 18px;                
     }
 
     .dropdown {
