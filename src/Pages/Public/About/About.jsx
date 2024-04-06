@@ -17,7 +17,7 @@ const About = () => {
                         ))}
                     </div>
                 </div>
-            </section>            
+            </section>           
     );
 };
 
