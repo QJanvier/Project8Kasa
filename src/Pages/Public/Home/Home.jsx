@@ -1,5 +1,5 @@
 import Banner from "@/Components/Banner/Banner";
-import HomeBanner from "@/Assets/image/bkg/cliff.jpeg";
+import HomeBanner from "@/assets/image/bkg/cliff.jpeg";
 import Card from "@/Components/Card/Card";
 
 import { NavLink } from 'react-router-dom';
