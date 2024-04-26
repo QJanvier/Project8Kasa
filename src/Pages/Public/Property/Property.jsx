@@ -1,5 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
-import propertyData from '../../../Assets/data/logements.json';
+import propertyData from '../../../assets/data/logements.json';
 import SlideShow from '../../../Components/Slideshow/Slideshow';
 import Rating from '../../../Components/Rating/Rating';
 import Dropdown from "../../../Components/Dropdown/Dropdown";
